@@ -1,10 +1,10 @@
 $(document).ready(function(){
   function score_indicate(){
-    let subject_points = [parseInt($('#national_language').val()),
-                          parseInt($('#english').val()),
-                          parseInt($('#mathematics').val()),
-                          parseInt($('#science').val()),
-                          parseInt($('#society').val())
+    let subject_points = [Number($('#national_language').val()),
+                          Number($('#english').val()),
+                          Number($('#mathematics').val()),
+                          Number($('#science').val()),
+                          Number($('#society').val())
                           ];
     let sum = 0;
     let num = subject_points.length;
@@ -29,11 +29,11 @@ $(document).ready(function(){
       }
   }
   function get_pass_or_failure(){
-    let subject_points = [parseInt($('#national_language').val()),
-                          parseInt($('#english').val()),
-                          parseInt($('#mathematics').val()),
-                          parseInt($('#science').val()),
-                          parseInt($('#society').val())
+    let subject_points = [Number($('#national_language').val()),
+                          Number($('#english').val()),
+                          Number($('#mathematics').val()),
+                          Number($('#science').val()),
+                          Number($('#society').val())
                           ];
     let number = subject_points.length;
     let judge ="pass";
